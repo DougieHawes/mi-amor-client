@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mi-amor-client/static/css/main.576fe23f.chunk.css",
+    "main.js": "/mi-amor-client/static/js/main.6c1a76f5.chunk.js",
+    "main.js.map": "/mi-amor-client/static/js/main.6c1a76f5.chunk.js.map",
+    "runtime-main.js": "/mi-amor-client/static/js/runtime-main.6c14a4dc.js",
+    "runtime-main.js.map": "/mi-amor-client/static/js/runtime-main.6c14a4dc.js.map",
+    "static/js/2.a748e884.chunk.js": "/mi-amor-client/static/js/2.a748e884.chunk.js",
+    "static/js/2.a748e884.chunk.js.map": "/mi-amor-client/static/js/2.a748e884.chunk.js.map",
+    "index.html": "/mi-amor-client/index.html",
+    "static/css/main.576fe23f.chunk.css.map": "/mi-amor-client/static/css/main.576fe23f.chunk.css.map",
+    "static/js/2.a748e884.chunk.js.LICENSE.txt": "/mi-amor-client/static/js/2.a748e884.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c14a4dc.js",
+    "static/js/2.a748e884.chunk.js",
+    "static/css/main.576fe23f.chunk.css",
+    "static/js/main.6c1a76f5.chunk.js"
+  ]
+}
