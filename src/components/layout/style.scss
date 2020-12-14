@@ -1,0 +1,91 @@
+@import "../../variables.scss";
+
+.navbar {
+  background-color: $colour3;
+  color: $colour2;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: $padding1;
+  position: fixed;
+  width: 100%;
+  .title {
+    font-family: $title-font;
+    font-size: 35px;
+    font-weight: 200;
+  }
+  .nav-links {
+    display: flex;
+    .nav-link {
+      cursor: pointer;
+      font-size: 21px;
+      margin-left: 6px;
+      min-width: 80px;
+      text-align: center;
+      .nav-link-icon {
+        font-size: 28px;
+      }
+      .nav-link-text {
+        font-size: 21px;
+      }
+    }
+    .menu-link {
+      cursor: pointer;
+      margin-left: 12px;
+      max-height: 42px;
+      min-width: 42px;
+      position: relative;
+      .bar-one {
+        background-color: $colour2;
+        height: 7px;
+        position: absolute;
+        width: 100%;
+      }
+      .bar-two {
+        background-color: $colour2;
+        height: 7px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+      .bar-three {
+        background-color: $colour2;
+        bottom: 0;
+        height: 7px;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  * {
+    color: $colour2;
+  }
+}
+
+.landing-jumbotron {
+  color: $colour2;
+  .upper-padding {
+    height: $navbar-height;
+  }
+  .landing-jumbotron-image {
+    background-color: $colour1;
+    height: 420px;
+    padding: 6px 3%;
+  }
+}
+
+.landing-products {
+  background-color: $colour2;
+  padding: $padding1;
+  .landing-products-title {
+    font-family: $title-font;
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .landing-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

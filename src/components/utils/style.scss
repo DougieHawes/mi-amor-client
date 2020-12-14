@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.basket-item {
+  border-bottom: 1px solid $colour2;
+  display: grid;
+  grid-template-columns: 35px auto 63px 21px;
+  height: 35px;
+  margin-bottom: 6px;
+  .basket-item-image {
+    background-color: $colour1;
+  }
+}
+
+.button,
+.input {
+  border: none;
+  height: 28px;
+  margin-top: 3px;
+}
+
+.button {
+}
+.button1 {
+  background-color: $colour1;
+  color: $colour2;
+  padding: 0 $form-padding1;
+}
+
+.input {
+  background-color: $colour2;
+  color: $colour1;
+  width: 100%;
+}
+
+.input1 {
+  padding-right: $form-padding1;
+  text-align: right;
+}
+
+.menu-item {
+  margin-bottom: 3px;
+  text-align: right;
+}
+.menu-item1 {
+  border-bottom: 2px solid $colour2;
+  font-size: 21px;
+  font-weight: 600;
+}
+.menu-item2 {
+  border-bottom: 1px solid $colour2;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.product-image {
+  margin: 12px auto;
+  text-align: center;
+  .product-image-container {
+    border: 3px solid $colour1;
+    height: 320px;
+    padding: 2%;
+    width: 320px;
+    .image {
+      background-color: $colour1;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .product-image-name {
+  }
+}
