@@ -17,7 +17,6 @@ const LandingProducts = () => {
           <ProductImage1 name="*sample text*" />
           <ProductImage1 name="*sample text*" />
           <ProductImage1 name="*sample text*" />
-          <ProductImage1 name="*sample text*" />
         </h2>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./style.min.css";
 
 const LandingJumbotron = () => {

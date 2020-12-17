@@ -3,59 +3,23 @@
 .navbar {
   background-color: $colour3;
   color: $colour2;
-  display: flex;
-  justify-content: space-between;
-  min-height: 60px;
-  padding: $padding1;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  height: $navbar-height;
+  padding: $main-padding;
   position: fixed;
   width: 100%;
-  .title {
-    font-family: $title-font;
-    font-size: 35px;
-    font-weight: 200;
+  .title-image {
+    border: 2px solid black;
+    width: 160px;
   }
-  .nav-links {
-    display: flex;
-    .nav-link {
-      cursor: pointer;
-      font-size: 21px;
-      margin-left: 6px;
-      min-width: 80px;
-      text-align: center;
-      .nav-link-icon {
-        font-size: 28px;
-      }
-      .nav-link-text {
-        font-size: 21px;
-      }
-    }
-    .menu-link {
-      cursor: pointer;
-      margin-left: 12px;
-      max-height: 42px;
-      min-width: 42px;
-      position: relative;
-      .bar-one {
-        background-color: $colour2;
-        height: 7px;
-        position: absolute;
-        width: 100%;
-      }
-      .bar-two {
-        background-color: $colour2;
-        height: 7px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-      }
-      .bar-three {
-        background-color: $colour2;
-        bottom: 0;
-        height: 7px;
-        position: absolute;
-        width: 100%;
-      }
+  .nav-link {
+    cursor: pointer;
+    font-size: 21px;
+    margin-top: 12px;
+    text-align: center;
+    .nav-link-icon {
+      font-size: 18px;
     }
   }
   * {
@@ -70,6 +34,7 @@
   }
   .landing-jumbotron-image {
     background-color: $colour1;
+    color: $colour2;
     height: 420px;
     padding: 6px 3%;
   }
@@ -77,7 +42,7 @@
 
 .landing-products {
   background-color: $colour2;
-  padding: $padding1;
+  padding: $main-padding;
   .landing-products-title {
     font-family: $title-font;
     font-size: 60px;
