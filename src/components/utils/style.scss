@@ -3,27 +3,35 @@
 .basket-item {
   border-bottom: 1px solid $colour2;
   display: grid;
-  grid-template-columns: 35px auto 63px 21px;
+  grid-template-columns: 28px auto 38px 18px 28px;
   height: 35px;
   margin-bottom: 6px;
   .basket-item-image {
     background-color: $colour1;
   }
-}
-
-.button,
-.input {
-  border: none;
-  height: 28px;
+  .basket-item-name,
+  .basket-item-price,
+  .basket-item-qty {
+    font-size: 14px;
+  }
 }
 
 .button {
+  background-color: $colour1;
+  border: none;
   cursor: pointer;
 }
 .button1 {
-  background-color: $colour1;
   border: 2px solid $colour2;
+  i {
+    color: $colour2;
+  }
+}
+.button2 {
   color: $colour2;
+  float: right;
+  padding: 2px 0;
+  width: 70px;
 }
 
 .card {
@@ -55,13 +63,17 @@
 
 .input {
   background-color: $colour2;
+  border: none;
   color: $colour1;
   width: 100%;
 }
 .input1 {
+  height: 28px;
   padding-left: $form-padding;
 }
 .input2 {
+  border-bottom: 1px solid $colour1;
+  margin: 4px 0;
 }
 
 .menu-item {
