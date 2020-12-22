@@ -4,20 +4,18 @@ import { Link } from "react-router-dom";
 
 import "./style.min.css";
 
-import titleImage from "../../media/titleImage.png";
+import logo from "../../media/logo.jpg";
 
 import Menu from "./dropdowns/Menu";
 import Searchbar from "./dropdowns/Searchbar";
-import Basket from "./dropdowns/Basket";
 
 const Navbar = () => {
   const [state, setState] = useState({
     showMenu: false,
     showSearchbar: false,
-    showBasket: false,
   });
 
-  const { showMenu, showSearchbar, showBasket } = state;
+  const { showMenu, showSearchbar } = state;
 
   return (
     <nav className="navbar">
@@ -35,7 +33,7 @@ const Navbar = () => {
       </div>
       <div className="nav-link">
         <i
-          className="fas fa-search"
+          className="nav-link-icon fas fa-search"
           onClick={() =>
             setState({
               showMenu: false,
@@ -48,8 +46,15 @@ const Navbar = () => {
       <div>
         <Link to="/">
           <img
-            src={titleImage}
             className="title-image"
+            src={logo}
+            onClick={() =>
+              setState({
+                showMenu: false,
+                showSearchbar: false,
+                showBasket: false,
+              })
+            }
             alt="Mi Amor Luxury Lengths"
           />
         </Link>
@@ -69,20 +74,21 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="nav-link">
-        <i
-          className="nav-link-icon fas fa-shopping-basket"
-          onClick={() =>
-            setState({
-              showMenu: false,
-              showSearchbar: false,
-              showBasket: !showBasket,
-            })
-          }
-        />
+        <Link to="/basket">
+          <i
+            className="nav-link-icon fas fa-shopping-basket"
+            onClick={() =>
+              setState({
+                showMenu: false,
+                showSearchbar: false,
+                showBasket: false,
+              })
+            }
+          />
+        </Link>
       </div>
       {showMenu && <Menu />}
       {showSearchbar && <Searchbar />}
-      {showBasket && <Basket />}
     </nav>
   );
 };

@@ -15,15 +15,42 @@
 .input {
   border: none;
   height: 28px;
-  margin-top: 3px;
 }
 
 .button {
+  cursor: pointer;
 }
 .button1 {
   background-color: $colour1;
+  border: 2px solid $colour2;
   color: $colour2;
-  padding: 0 $form-padding1;
+}
+
+.card {
+  margin: 0 auto 21px auto;
+  .card-image {
+    background-color: $colour1;
+  }
+  .card-title {
+    background-color: $colour1;
+    border: 4px solid $colour3;
+    color: $colour3;
+    margin: 12px auto 6px auto;
+    max-width: 180px;
+  }
+}
+.card1 {
+  max-width: 350px;
+  text-align: center;
+  width: 100%;
+  .card-image {
+    height: 100vw;
+    margin: 0 auto;
+    max-height: 350px;
+  }
+  .card-title {
+    font-size: 28px;
+  }
 }
 
 .input {
@@ -31,25 +58,28 @@
   color: $colour1;
   width: 100%;
 }
-
 .input1 {
-  padding-right: $form-padding1;
-  text-align: right;
+  padding-left: $form-padding;
+}
+.input2 {
 }
 
 .menu-item {
-  margin-bottom: 3px;
-  text-align: right;
+  cursor: pointer;
 }
 .menu-item1 {
-  border-bottom: 2px solid $colour2;
-  font-size: 21px;
-  font-weight: 600;
+  background-color: $colour1;
+  border-bottom: 1px solid $colour2;
+  color: $colour2;
+  font-size: 16px;
+  padding: $menu-padding1;
 }
 .menu-item2 {
-  border-bottom: 1px solid $colour2;
-  cursor: pointer;
-  font-size: 18px;
+  background-color: $colour2;
+  border-bottom: 1px solid $colour1;
+  color: $colour1;
+  font-size: 14px;
+  padding: $menu-padding2;
 }
 
 .product-image {

@@ -14,9 +14,21 @@
   box-sizing: border-box;
   color: $colour1;
   font-family: $regular-font;
+  list-style: none;
   margin: 0;
   outline: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font;
+  font-weight: 200;
 }
 
 .app {
+  .route-box {
+  }
 }

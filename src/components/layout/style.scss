@@ -10,15 +10,14 @@
   position: fixed;
   width: 100%;
   .title-image {
-    border: 2px solid black;
     width: 160px;
   }
   .nav-link {
-    cursor: pointer;
     font-size: 21px;
     margin-top: 12px;
     text-align: center;
     .nav-link-icon {
+      cursor: pointer;
       font-size: 18px;
     }
   }
@@ -29,28 +28,66 @@
 
 .landing-jumbotron {
   color: $colour2;
-  .upper-padding {
-    height: $navbar-height;
-  }
   .landing-jumbotron-image {
     background-color: $colour1;
     color: $colour2;
-    height: 420px;
+    height: 280px;
     padding: 6px 3%;
   }
 }
 
 .landing-products {
-  background-color: $colour2;
   padding: $main-padding;
   .landing-products-title {
     font-family: $title-font;
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 200;
     text-align: center;
   }
   .landing-products-grid {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.footer {
+  background-color: $colour1;
+  padding: 12px 2%;
+  * {
+    color: $colour2;
+  }
+  .footer-section {
+    margin-bottom: 6px;
+    .footer-section-title {
+      font-size: 28px;
+      text-align: center;
+    }
+    .newsletter-submit {
+      display: flex;
+      margin: 12px 21px;
+    }
+    .social-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 12px 21px;
+      .social-logo {
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+  }
+  .footer-links {
+    padding: 8px 3% 16px;
+    .footer-link {
+      color: rgba($color: $colour2, $alpha: 0.7);
+      cursor: pointer;
+      font-size: 18px;
+      margin: 3px 0;
+
+      transition: 0.3s ease-in-out color;
+    }
+    .footer-link:hover {
+      color: $colour3;
+    }
   }
 }

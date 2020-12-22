@@ -1,6 +1,6 @@
 $colour1: #3b2f2f;
 $colour2: #f8f8f8;
-$colour3: #ebc8b2;
+$colour3: #d6bda9;
 
 $dropdown-width: 320px;
 
@@ -9,8 +9,12 @@ $regular-font: "Roboto Condensed", sans-serif;
 
 $navbar-height: 70px;
 
-$form-padding1: 12px;
+$form-padding: 0 12px 3px;
 
-$main-padding: 7px 1%;
+$main-padding: 7px 0;
+
+$menu-padding1: 4px 12px;
+$menu-padding2: 2px 12px;
 
 $route-padding: $navbar-height 0 21px 0;
+$inner-route-padding: 6px 4%;

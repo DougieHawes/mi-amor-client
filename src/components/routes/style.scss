@@ -1,7 +1,12 @@
 @import "../../variables.scss";
 
 .route {
+  background-color: $colour2;
+  min-height: 600px;
   padding: $route-padding;
+  .route-container {
+    padding: $inner-route-padding;
+  }
 }
 
 .account {
