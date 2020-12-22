@@ -20,7 +20,7 @@ const Basket = () => {
           </div>
           <Button2 text="Checkout" />
         </div>
-        <Link to="/">continue shopping</Link>
+        <Link to="/mi-amor-client">continue shopping</Link>
       </div>
     </div>
   );

@@ -1,0 +1,18 @@
+@import "../../../variables.scss";
+
+.products-page {
+  .products-page-title {
+    font-size: 35px;
+    margin: 12px 0;
+    text-align: center;
+  }
+  .products-page-para {
+    margin: 0 21px 14px 21px;
+    text-align: justify;
+  }
+  .products-page-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+}

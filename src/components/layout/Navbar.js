@@ -44,7 +44,7 @@ const Navbar = () => {
         />
       </div>
       <div>
-        <Link to="/">
+        <Link to="/mi-amor-client">
           <img
             className="title-image"
             src={logo}
